@@ -19,17 +19,22 @@ the title (specified below)
 ● The rendering logic should be designed to be scalable so that there can be more types
 of cards added in the future.
   Places
+
 ● Once the thumbnail image is done downloading, perform 2 image tasks in parallel
 ○ Task 1) Crop the image to a square
+
 ■ Feel free to use  https://github.com/mattgemmell/MGImageUtilities
 ○ Task 2) Determine the average color of the image
+
 ■ Feel free to use (We don’t want to waste your time re­inventing the wheel)
-http://www.bobbygeorgescu.com/2011/08/finding­average­color­of­uiimag
-e/
+http://www.bobbygeorgescu.com/2011/08/finding­average­color­of­uiimage/
+
 ○ Once BOTH tasks are completed, set the thumbnail image with the square image and set the card background color to the average color (yes, it won’t be pretty)
 cards:
+
    Movie cards:
 ■ Do NOT set the thumbnail image before the color is determined
  ● Show an image of the main actor
+
 Music cards:
 ● Show a button which will open a webpage to the music video
